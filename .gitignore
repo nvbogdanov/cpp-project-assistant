@@ -9,3 +9,7 @@ out/
 
 # macOS
 .DS_Store
+
+# VSIX packages
+*.vsix
+EOF
