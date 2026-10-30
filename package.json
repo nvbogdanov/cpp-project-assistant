@@ -1,0 +1,68 @@
+{
+  "name": "cpp-project-assistant",
+  "displayName": "cpp-project-assistant",
+  "description": "A toolkit for C++ project development",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.141.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cpp-project-assistant.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "cpp-project-assistant.createProject",
+        "title": "Create C++ Project"
+      },
+      {
+        "command": "cpp-project-assistant.createClass",
+        "title": "Create C++ Class"
+      },
+      {
+        "command": "cpp-project-assistant.createFile",
+        "title": "Create C++ File"
+      },
+      {
+        "command": "cpp-project-assistant.buildProject",
+        "title": "Build C++ Project"
+      },
+      {
+        "command": "cpp-project-assistant.cleanBuild",
+        "title": "Clean Build"
+      },
+      {
+        "command": "cpp-project-assistant.projectStatistics",
+        "title": "Project Statistics"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.144.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "typescript-eslint": "^8.61.1",
+    "eslint": "^10.5.0",
+    "typescript": "^6.0.3",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}

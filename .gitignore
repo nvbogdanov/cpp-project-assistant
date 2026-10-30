@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Compiled output
+out/
+
+# VS Code test files
+.vscode-test/
+
+# macOS
+.DS_Store
